@@ -174,9 +174,29 @@ button {
   color: var(--accent);
 }
 
+.today-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin: 25px 0 0;
+  padding: 7px 14px;
+  color: #59647a;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(103, 88, 232, 0.14);
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(32, 38, 65, 0.06);
+}
+
+.today-date > span {
+  color: var(--accent);
+  font-size: 0.55rem;
+}
+
 .hero-description {
   max-width: 610px;
-  margin: 30px auto 38px;
+  margin: 22px auto 38px;
   color: var(--muted);
   font-size: clamp(1rem, 2vw, 1.18rem);
 }
@@ -385,6 +405,17 @@ button {
   margin: 0;
 }
 
+.footer-meta {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-meta p:first-child {
+  color: #ffffff;
+  font-weight: 700;
+}
+
 :focus-visible {
   outline: 3px solid #f1a833;
   outline-offset: 4px;
@@ -455,6 +486,12 @@ button {
     align-items: flex-start;
     flex-direction: column;
     gap: 12px;
+  }
+
+  .footer-meta {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
   }
 }
 
